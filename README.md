@@ -2,18 +2,26 @@
 
 Responsive static portfolio for Muntasir Mahmud, B.Sc. in Electrical & Electronic Engineering (AIUB).
 
-## Included
+## Design
+- Cream/white canvas with engineering green and solar-yellow accents
+- Space Grotesk display typography and IBM Plex Mono technical labels
+- Electrical, renewable-energy, embedded-systems, and networking visual motifs
+- Responsive layout for desktop and mobile
+
+## Files
 - `index.html` — website entry point
-- `styles.css` — responsive design
+- `styles.css` — responsive design and theme
 - `script.js` — mobile navigation and scroll reveal
-- Portfolio areas: power systems, renewable energy, embedded systems, automation, networking, internship, training, and IEEE Xplore record
+- `assets/muntasir-headshot.jpg` — profile photo
+- `.github/workflows/pages.yml` — GitHub Pages deployment workflow
 
-## GitHub Pages
-1. Open **Settings → Pages**.
-2. Under **Build and deployment**, select **Deploy from a branch**.
-3. Select branch `main` and folder `/(root)`, then save.
-4. Wait for the deployment and open the URL shown in Pages settings.
+## Publish
+The GitHub Actions workflow deploys the static site to GitHub Pages on pushes to `main`.
+Open **Settings → Pages** and choose **GitHub Actions** as the source if Pages has not yet been enabled.
 
-The site has no build step. The portrait currently uses the linked GitHub profile avatar. The PDF portfolio and uploaded studio portrait are available in the ChatGPT conversation bundle; upload those binary files to the repository root and `assets/` respectively if you want them hosted on the public site. No CGPA is included.
+## Contact
+- Email: muntasir18800@gmail.com
+- LinkedIn: https://www.linkedin.com/in/muntasir18899/
+- IEEE Xplore record supplied by the portfolio owner: https://ieeexplore.ieee.org/document/11703999
 
-IEEE Xplore record provided by the portfolio owner: https://ieeexplore.ieee.org/document/11703999
+No CGPA is included. CCNA is described as Udemy course training, not an official Cisco certification.
