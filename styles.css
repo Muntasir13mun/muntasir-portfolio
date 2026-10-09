@@ -105,3 +105,31 @@ body{font-size:16px}
  .footer .brand>span:last-child{font-size:12px}
  .contact-location{font-size:14px!important}
 }
+
+/* Contact area: clear, clickable contact methods with gentle attention cues */
+.contact-actions{display:flex;flex-direction:column;gap:8px}
+.contact-line.contact-action{display:flex;align-items:center;gap:15px;padding:16px 14px;border:1px solid #dce0d3;border-radius:14px;background:rgba(255,254,248,.82);transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.contact-line.contact-action:hover{transform:translateX(4px);border-color:#8cae91;box-shadow:0 8px 24px #203a2415}
+.contact-icon{width:45px;height:45px;flex:0 0 45px;border-radius:13px;display:flex;align-items:center;justify-content:center;animation:contactGlow 3s ease-in-out infinite}
+.contact-icon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.email-icon{background:#f6e9b6;color:#705400}
+.whatsapp-icon{background:#dff1dc;color:#168347;animation-delay:.5s}
+.linkedin-icon{background:#dcecf9;color:#0a66c2;animation-delay:1s}
+.publication-icon{background:#e9eadc;color:#176b45;animation-delay:1.5s}
+.linkedin-icon svg .linkedin-fill{fill:currentColor;stroke:none}
+.contact-copy{display:flex;min-width:0;flex-direction:column;gap:3px}
+.contact-copy>span{font:11px var(--mono);letter-spacing:.09em;color:#176b45}
+.contact-copy strong{font-size:15px;line-height:1.45;color:#17241e}
+.contact-copy small{font-size:12px;line-height:1.5;color:#667267;overflow-wrap:anywhere}
+.contact-line.contact-action:hover .contact-copy strong{color:#176b45}
+.whatsapp-line:hover .contact-copy strong{color:#168347}
+.linkedin-contact:hover .contact-copy strong{color:#0a66c2}
+.contact-location{margin-top:18px!important}
+@keyframes contactGlow{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(23,107,69,0)}50%{transform:scale(1.045);box-shadow:0 0 0 5px rgba(23,107,69,.08)}}
+@media(max-width:650px){
+ .contact-line.contact-action{gap:11px;padding:13px 11px}
+ .contact-icon{width:40px;height:40px;flex-basis:40px;border-radius:12px}
+ .contact-copy strong{font-size:14px}
+ .contact-copy small{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){.contact-icon{animation:none!important}.contact-line.contact-action{transition:none!important}}
