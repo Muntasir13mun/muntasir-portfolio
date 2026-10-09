@@ -18,3 +18,47 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans)}
 .publication-section{background:linear-gradient(105deg,#e8edda,#f5f0d8);border-color:#d6dccd}.contact-box{border-color:#c9d7c6;background:radial-gradient(ellipse at 10% 0%,#e3ebd6,#fffef8 70%)}.contact-line{border-bottom-color:#dce0d3}.contact-line strong{color:#1d2c22}
 .footer{border-top-color:var(--line);color:#657267;background:#f0f0e5}
 @media(max-width:650px){.nav{background:#f6f5ed;border-bottom-color:var(--line)}.hero-visual:before{width:260px;height:260px}}
+
+/* Final polish: clearer type scale, compact GitHub mark, and WhatsApp contact */
+.brand-cluster{display:flex;align-items:center;gap:13px;min-width:0}
+.brand{gap:12px;font-size:13px;letter-spacing:.12em;white-space:nowrap}
+.brand-mark{font-size:29px;font-weight:700}
+.github-logo-link{width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #c5d2c1;border-radius:50%;color:#176b45;background:#fffef8;flex:0 0 auto;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.github-logo-link svg{width:19px;height:19px}
+.github-logo-link:hover{transform:translateY(-2px);background:#176b45;color:#fffef8;border-color:#176b45}
+.nav{font-size:13px;gap:25px;font-weight:600}
+.nav-cta{padding:10px 17px}
+.hero h1{font-size:clamp(45px,5.7vw,76px);line-height:1.07;max-width:780px}
+.hero-lede{font-size:18px;line-height:1.8;max-width:650px}
+.eyebrow{font-size:12px;letter-spacing:.13em;font-weight:600}
+.hero-meta{font-size:11px}
+.section-heading h2,.contact-box h2{font-size:clamp(38px,4.6vw,58px);line-height:1.13}
+.section-intro,.about-lede{font-size:17px;line-height:1.8}
+.detail-row span,.contact-line span{font-size:11px;letter-spacing:.1em;font-weight:600}
+.detail-row strong{font-size:14px;line-height:1.6}
+.project-top{font-size:10px}
+.project-content h3{font-size:21px;line-height:1.4}
+.project-featured h3{font-size:27px}
+.project-content p,.skill-card p,.timeline-copy p,.publication-inner p,.contact-box p{font-size:14px;line-height:1.85}
+.tags span{font-size:10px;padding:6px 10px}
+.skill-card h3{font-size:17px;line-height:1.4}
+.skill-icon{font-size:29px}
+.timeline-date{font-size:11px}
+.timeline-copy h3{font-size:19px;line-height:1.5}
+.publication-inner h2{font-size:clamp(32px,3.7vw,46px)}
+.contact-line{padding:19px 0}
+.contact-line strong{font-size:15px;line-height:1.6;display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.wa-badge{font-size:11px;font-weight:700;color:#176b45;border:1px solid #9dc8a6;border-radius:24px;padding:5px 9px;background:#edf7e9;white-space:nowrap}
+.whatsapp-line:hover .wa-badge{background:#d9efcf;border-color:#176b45}
+.button{font-size:13px;padding:14px 21px}
+.footer{font-size:12px}
+@media(max-width:850px){.nav{gap:15px}.brand{font-size:12px}.github-logo-link{width:34px;height:34px}}
+@media(max-width:650px){
+ .topbar{padding:0 5%}.brand-cluster{gap:9px}.brand{gap:8px;font-size:11px;letter-spacing:.07em}.brand-mark{font-size:26px}.github-logo-link{width:32px;height:32px}.github-logo-link svg{width:17px;height:17px}
+ .nav{font-size:14px}.hero h1{font-size:clamp(39px,10.5vw,56px)}.hero-lede{font-size:16px}
+ .section-heading h2,.contact-box h2{font-size:clamp(34px,9vw,46px)}
+ .project-content h3{font-size:19px}.project-featured h3{font-size:23px}
+ .project-content p,.skill-card p,.timeline-copy p,.publication-inner p,.contact-box p{font-size:13px}
+ .skill-card h3{font-size:15px}.contact-line strong{font-size:14px}
+ .footer .brand-cluster{width:100%}
+}
