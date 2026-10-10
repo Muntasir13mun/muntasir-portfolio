@@ -133,3 +133,15 @@ body{font-size:16px}
  .contact-copy small{font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){.contact-icon{animation:none!important}.contact-line.contact-action{transition:none!important}}
+
+/* Project case-study links and research actions */
+.project-report-link{display:inline-flex;align-items:center;gap:8px;margin-top:17px;padding:9px 12px;border:1px solid rgba(67,217,232,.38);border-radius:10px;color:#baf5f6;font-size:13px;font-weight:750;background:rgba(10,42,55,.62);transition:transform .2s ease,border-color .2s ease,background .2s ease}
+.project-report-link span{color:#b7ed77;font-size:16px}
+.project-report-link:hover{transform:translateY(-2px);border-color:#43d9e8;background:rgba(20,69,83,.7);text-decoration:none}
+.vlsi-art{background:radial-gradient(circle at 50% 50%,rgba(67,217,232,.15),transparent 55%),linear-gradient(135deg,#0c2433,#101b31)}
+.vlsi-art .project-symbol{color:#b7ed77}
+.publication-actions{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.publication-actions .button-secondary{border:1px solid rgba(67,217,232,.35);background:rgba(12,37,51,.8);color:#c9f6f7}
+.publication-author{color:#b7ed77;font-weight:700;margin-top:12px}
+@media(max-width:760px){.publication-actions{align-items:stretch}.publication-actions .button{justify-content:center}}
+@media(prefers-reduced-motion:reduce){.project-report-link{transition:none}}
